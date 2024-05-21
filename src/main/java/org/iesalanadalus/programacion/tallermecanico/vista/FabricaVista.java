@@ -16,12 +16,6 @@ public enum FabricaVista {
         public Vista crear() {
             return VistaGrafica.getInstancia();
         }
-    },
-    VENTANAS {
-        @Override
-        public Vista crear() {
-            return new VistaTexto();
-        }
     };
 
     public abstract Vista crear();

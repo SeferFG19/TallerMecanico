@@ -14,11 +14,11 @@ public class Main {
     }
 
     private static Pair<FabricaVista, FabricaFuenteDatos> procesarArgumentos(String[] args) {
-        FabricaVista fabricaVista = FabricaVista.VENTANAS;
+        FabricaVista fabricaVista = FabricaVista.GRAFICA;
         FabricaFuenteDatos fabricaFuenteDatos = FabricaFuenteDatos.MARIADB;
         for (String argumento : args) {
             if (argumento.equalsIgnoreCase("vventanas")) {
-                fabricaVista = FabricaVista.VENTANAS;
+                fabricaVista = FabricaVista.GRAFICA;
             } else if (argumento.equalsIgnoreCase("vtexto")) {
                 fabricaVista = FabricaVista.TEXTO;
             } else if (argumento.equalsIgnoreCase("fdficheros")) {
