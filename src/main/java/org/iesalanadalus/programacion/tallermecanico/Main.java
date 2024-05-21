@@ -7,9 +7,13 @@ import org.iesalanadalus.programacion.tallermecanico.modelo.FabricaModelo;
 import org.iesalanadalus.programacion.tallermecanico.modelo.negocio.FabricaFuenteDatos;
 import org.iesalanadalus.programacion.tallermecanico.vista.FabricaVista;
 
+import javax.naming.OperationNotSupportedException;
+
 public class Main {
-    public static void main(String[] args) {
-        IControlador controlador = new Controlador(FabricaModelo.CASCADA, FabricaFuenteDatos.FICHEROS, FabricaVista.GRAFICA);
+    public static void main(String[] args) throws OperationNotSupportedException {
+        Pair<FabricaVista, FabricaFuenteDatos> fabricas = procesarArgumentos(args);
+
+        IControlador controlador = new Controlador(FabricaModelo.CASCADA, fabricas.getValue(), FabricaVista.GRAFICA);
         controlador.comenzar();
     }
 
