@@ -1,0 +1,23 @@
+package org.iesalanadalus.programacion.tallermecanico.modelo.negocio;
+
+import org.iesalanadalus.programacion.tallermecanico.modelo.dominio.Cliente;
+
+import javax.naming.OperationNotSupportedException;
+import java.util.List;
+
+public interface IClientes {
+
+    void comenzar();
+
+    void terminar();
+
+    List<Cliente> get();
+
+    void insertar(Cliente cliente) throws OperationNotSupportedException;
+
+    boolean modificar(Cliente cliente, String nombre, String telefono) throws OperationNotSupportedException;
+
+    Cliente buscar(Cliente cliente);
+
+    void borrar(Cliente cliente) throws OperationNotSupportedException;
+}
