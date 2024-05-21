@@ -1,7 +1,7 @@
 package org.iesalanadalus.programacion.tallermecanico.modelo.negocio.ficheros;
 
-import org.iesalandalus.programacion.tallermecanico.modelo.dominio.Vehiculo;
-import org.iesalandalus.programacion.tallermecanico.modelo.negocio.IVehiculos;
+import org.iesalanadalus.programacion.tallermecanico.modelo.dominio.Vehiculo;
+import org.iesalanadalus.programacion.tallermecanico.modelo.negocio.IVehiculos;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
